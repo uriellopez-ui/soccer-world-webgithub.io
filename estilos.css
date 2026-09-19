@@ -1,0 +1,1489 @@
+
+  
+
+
+body {
+    padding-top: 100px;
+}
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f1f1f6f1; /* Color de fondo de la barra principal */
+    padding: 10px 15px;
+    z-index: 1000; /* Asegura que la barra siempre quede encima del contenido */
+    box-shadow: 0 2px 9px rgba(0, 0, 0, 0.3);
+}
+
+/* 2. Alinear el logo, título y la botonera en una sola línea */
+.header div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* 3. Estilos del contenedor de los botones */
+.navbar {
+    display: flex;
+    gap: 10px; /* Espacio uniforme entre botón y botón */
+}
+
+/* 4. Estilos de cada botón (cuadrados con bordes redondeados) */
+.navbar a {
+    color: #ffffff;
+    background-color:  #b80101; /* Color verde para los botones */
+    padding: 10px 18px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px; /* Bordes redondeados */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+
+}
+
+/* 5. Efecto cuando pasas el cursor sobre el botón */
+.navbar a:hover {
+    background-color: #ec0606; /* Cambia a un verde más claro */
+    transform: translateY(-2px); /* Pequeño levante visual al pasar el mouse */
+/* Base común para los 3 títulos */
+.caja2, 
+.cajabundes, 
+.titulositalia {
+  background: linear-gradient(90deg, #111112 0%, #1a1a1c 100%);
+  color: #ffffff;
+  font-family: 'Arial Black', Impact, sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 12px 20px;
+  margin: 30px 0 15px 0;
+  border-radius: 6px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  
+  /* Transición fluida para el efecto de movimiento */
+  transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+/* Efecto interactivo al pasar el ratón */
+.caja2:hover, 
+.cajabundes:hover, 
+.titulositalia:hover {
+  transform: translateX(6px); /* Se desplaza ligeramente a la derecha */
+}
+
+/* 1. Estilo para la Liga Española (Borde Rojo/Dorado) */
+.caja2 {
+  border-left: 6px solid #d32f2f;
+}
+.caja2:hover {
+  border-left-color: #fbc02d;
+}
+
+/* 2. Estilo para la Bundesliga (Borde Dorado/Rojo) */
+.cajabundes {
+  border-left: 6px solid #fbc02d;
+}
+.cajabundes:hover {
+  border-left-color: #d32f2f;
+}
+
+/* 3. Estilo para la Serie A Italia (Borde Verde Deportivo) */
+.titulositalia {
+  border-left: 6px solid #1b5e20;
+}
+.titulositalia:hover {
+  border-left-color: #4caf50;
+}
+}
+
+      /* Contenedor principal de la plantilla */
+      .plantilla-container {
+      max-width: 700px;
+      font-family: Arial, sans-serif;
+      color: #333;
+      margin: 90px  auto;
+      padding: 10px;
+    }
+
+    /* Título de la posición */
+    .titulo-posicion {
+      font-size: 1.2rem;
+      font-weight: bold;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 5px;
+      margin-top: 25px;
+      margin-bottom: 15px;
+    }
+
+    /* Grilla de 2 columnas para las tarjetas */
+    .grid-jugadores {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px 25px;
+    }
+
+    /* Tarjeta individual del jugador */
+    .tarjeta-jugador {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    /* Foto del jugador */
+    .foto-jugador {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      object-fit: cover;
+      background-color: #f0f0f0;
+      border: 1px solid #e0e0e0;
+    }
+
+    /* Información básica del jugador */
+    .info-jugador {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    .nombre-dorsal {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nombre {
+      font-weight: bold;
+      color: #0056b3;
+      font-size: 0.95rem;
+      text-decoration: none;
+    }
+
+    .nombre:hover {
+      text-decoration: underline;
+    }
+
+    .dorsal {
+      font-weight: bold;
+      color: #333;
+      font-size: 0.95rem;
+      margin-left: 5px;
+    }
+
+    .posicion {
+      font-size: 0.8rem;
+      color: #666;
+      margin-top: 2px;
+    }
+ /*ESTILOS COMPLETOS PARA LA PAGINA DE ESTADIOS*/
+
+.tablaespaña, .estadiosgermany, .estadiositaly {
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 8px 8px 0 0;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  /* Centrado uniforme para todas las celdas y encabezados de las tablas */
+.tablaespaña th,
+.estadiosgermany th,
+.estadiositaly th,
+.tablaespaña td,
+.estadiosgermany td,
+.estadiositaly td {
+  text-align: center;      /* Centra horizontalmente el texto y números */
+  vertical-align: middle; /* Centra verticalmente respecto a las imágenes */
+}
+.tablainglaterra { 
+    width: 105%;
+    border-collapse: collapse;
+}
+.tablainglaterra
+.tablainglaterra tr,
+.tablainglaterra th,
+.tablainglaterra td{
+    border: 1PX solid black;
+   border-collapse: collapse; 
+   padding: 0,5 rem;
+}
+
+
+/* Alineación opcional a la izquierda para los nombres de estadios si los prefieres alineados */
+.tablaespaña td:nth-child(3),
+.estadiosgermany td:nth-child(3),
+.estadiositaly td:nth-child(3) {
+  text-align: left;
+}
+}
+
+    
+/* 1. Estilizado general para todas las tablas de estadios */
+.tablaespaña,
+.estadiosgermany,
+.estadiositaly {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  background-color: #ffffff;
+}
+
+/* 2. Encabezado elegante con estilo deportivo */
+.tablaespaña th,
+.estadiosgermany th,
+.estadiositaly th {
+  background-color: #0f922d;
+  color: #ede4e4;
+  padding: 14px 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 0.8px;
+  border: none;
+}
+
+/* 3. Celdas limpias sin bordes toscos */
+.tablaespaña td,
+.estadiosgermany td,
+.estadiositaly td {
+  padding: 12px 16px;
+  color: #333333;
+  border-bottom: 1px solid #f0f0f0;
+  vertical-align: middle;
+}
+
+/* 4. Efecto dinámico al pasar el cursor (Hover) */
+.tablaespaña tr:hover,
+.estadiosgermany tr:hover,
+.estadiositaly tr:hover {
+  background-color: #f4fbf7;
+  transition: background-color 0.2s ease;
+}
+
+/* 5. Ajuste perfecto para las fotos dentro de la tabla */
+.tablaespaña img,
+.estadiosgermany img,
+.estadiositaly img {
+  width: 100px;
+  height: 65px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+/* Cambia el estilo de la caja de título "Estadios" */
+.cajatitulo {
+  background-color: #099913; /* Mismo verde oscuro de la tabla */
+  color: #ffffff;            /* Texto en blanco para buen contraste */
+  border: none;              /* Quita bordes fluorescentes */
+  padding: 8px 18px;
+  border-radius: 6px;
+  font-weight: bold;
+
+}
+/* Tarjeta contenedora con la paleta de tu página */
+.tarjeta-explorador {
+  background-color: #111112;
+  color: #ffffff;
+  padding: 22px;
+  margin: 30px auto;
+  max-width: 650px;
+  border-radius: 8px;
+  border-left: 5px solid #1b5e20; /* Mismo verde de tus tablas */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.tarjeta-explorador h3 {
+  margin-top: 0;
+  color: #ffffff;
+}
+
+/* Alineación del formulario */
+.grupo-control {
+  display: flex;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+/* Menú desplegable oscuro */
+.select-estilizado {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #1b5e20;
+  border-radius: 6px;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  font-size: 14px;
+  outline: none;
+  cursor:pointer;
+}
+
+/* Botón con el verde de la tabla */
+.btn-ir {
+  background-color: #1b5e20;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-ir:hover {
+  background-color: #2e7d32;
+}
+/* Alineación de logo y título */
+.brand-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+}
+
+/* Título con relieve y sombra 3D negra */
+.titulo-pagina {
+  font-family: 'Arial Black', Impact, sans-serif;
+  font-size: 22px;
+  font-weight: 900;
+  margin: 0;
+  margin-left: 2px; /* Ajusta qué tan pegado queda al logo */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #ffffff;    /* Color frontal del texto */
+
+  /* Efecto 3D en capas utilizando sombras negras */
+  text-shadow: 
+    1px 1px 0px #000,
+    2px 2px 0px #000,
+    3px 3px 0px #000,
+    4px 4px 0px #000,
+    5px 5px 6px rgba(0, 0, 0, 0.7);
+}
+
+/* Color en relieve para la palabra WORLD */
+.titulo-pagina span {
+  color: #4caf50;    /* Verde deportivo de tus tablas */
+}
+/* Base común para los 3 títulos */
+.caja2, 
+.cajabundes, 
+.titulositalia {
+  background: linear-gradient(90deg, #111112 0%, #1a1a1c 100%);
+  color: #ffffff;
+  font-family: 'Arial Black', Impact, sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 12px 20px;
+  margin: 30px 0 15px 0;
+  border-radius: 6px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  
+  /* Transición fluida para el efecto de movimiento */
+  transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+/* Efecto interactivo al pasar el ratón */
+.caja2:hover, 
+.cajabundes:hover, 
+.titulositalia:hover {
+  transform: translateX(6px); /* Se desplaza ligeramente a la derecha */
+}
+
+/* 1. Estilo para la Liga Española (Borde Rojo/Dorado) */
+.caja2 {
+  border-left: 6px solid #d32f2f;
+}
+.caja2:hover {
+  border-left-color: #fbc02d;
+}
+
+/* 2. Estilo para la Bundesliga (Borde Dorado/Rojo) */
+.cajabundes {
+  border-left: 6px solid #fbc02d;
+}
+.cajabundes:hover {
+  border-left-color: #d32f2f;
+}
+
+/* 3. Estilo para la Serie A Italia (Borde Verde Deportivo) */
+.titulositalia {
+  border-left: 6px solid #1b5e20;
+}
+.titulositalia:hover {
+  border-left-color: #4caf50;
+}
+/* Contenedor principal del pie de página */
+.pie-pagina {
+  background-color: #0b0b0c;
+  color: #a0a0a0;
+  margin-top: 50px;
+  border-top: 4px solid #1b5e20; /* Borde verde césped */
+  font-family: Arial, sans-serif;
+}
+
+/* Disposición en columnas flexibles */
+.contenido-footer {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.columna-footer {
+  flex: 1;
+  min-width: 220px;
+}
+
+/* Título de la marca */
+.logo-footer {
+  color: #ffffff;
+  font-family: 'Arial Black', Impact, sans-serif;
+  font-size: 20px;
+  margin-top: 0;
+}
+
+.logo-footer span {
+  color: #4caf50;
+}
+
+/* Títulos de sección */
+.columna-footer h4 {
+  color: #ffffff;
+  font-size: 16px;
+  margin-top: 0;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #1b5e20;
+  display: inline-block;
+  padding-bottom: 4px;
+}
+
+/* Lista de enlaces */
+.columna-footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.columna-footer ul li {
+  margin-bottom: 8px;
+}
+
+.columna-footer a {
+  color: #a0a0a0;
+  text-decoration: none;
+  transition: color 0.2s, padding-left 0.2s;
+}
+
+.columna-footer a:hover {
+  color: #4caf50;
+  padding-left: 4px; /* Efecto de desplazamiento suave */
+}
+
+/* Texto de autoría */
+.columna-footer .autor strong {
+  color: #ffffff;
+}
+
+/* Línea de copyright */
+.copyright-footer {
+  background-color: #050505;
+  text-align: center;
+  padding: 15px 20px;
+  font-size: 13px;
+  border-top: 1px solid #1a1a1a;
+  color: #777777;
+}
+
+.copyright-footer p {
+  margin: 0;
+}
+
+/* ==========================================================================
+   ESTILOS GENERALES Y SECCIÓN INICIO
+   ========================================================================== */
+
+/* Contenedor principal de la página de inicio */
+#inicio {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  color: #e0e6ed;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0d0f12;
+}
+
+/* Título Principal */
+#inicio h1 {
+  font-family: 'Impact', 'Arial Black', sans-serif;
+  font-size: 2.5rem;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 35px;
+  position: relative;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+#inicio h1::after {
+  content: '';
+  display: block;
+  width: 120px;
+  height: 4px;
+  background: linear-gradient(90deg, #1b5e20, #4caf50);
+  margin: 12px auto 0;
+  border-radius: 2px;
+}
+
+/* Secciones individuales */
+.seccion-historia {
+  margin-bottom: 40px;
+}
+
+/* Encabezados de Sección (1, 2, 3, 4) */
+#inicio h2 {
+  font-size: 1.5rem;
+  color: #ffffff;
+  background: linear-gradient(90deg, #161a21 0%, #0d0f12 100%);
+  padding: 12px 18px;
+  border-left: 5px solid #4caf50;
+  border-radius: 6px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+#inicio h3 {
+  font-size: 1.2rem;
+  color: #81c784;
+  margin-top: 25px;
+  margin-bottom: 12px;
+  letter-spacing: 0.5px;
+}
+
+/* ==========================================================================
+   TEXTOS INTRODUCTORIOS ANTES DE LAS TABLAS (CREATIVOS Y DESTACADOS)
+   ========================================================================== */
+
+/* Aplica a los párrafos explicativos previos a las tablas */
+.seccion-historia > p,
+.FIFA {  color: #ffffff !important;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  background: linear-gradient(135deg, rgba(20, 24, 32, 0.95), rgba(27, 94, 32, 0.25));
+  border-left: 5px solid #4caf50;
+  border-right: 1px solid rgba(76, 175, 80, 0.3);
+  padding: 16px 22px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(6px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;}
+
+  .TORNEO { color: #ffffff !important;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  background: linear-gradient(135deg, rgba(20, 24, 32, 0.95), rgba(27, 94, 32, 0.25));
+  border-left: 5px solid #4caf50;
+  border-right: 1px solid rgba(76, 175, 80, 0.3);
+  padding: 16px 22px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(6px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;}
+
+  .CAMPEON{ color: #ffffff !important;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  background: linear-gradient(135deg, rgba(20, 24, 32, 0.95), rgba(27, 94, 32, 0.25));
+  border-left: 5px solid #4caf50;
+  border-right: 1px solid rgba(76, 175, 80, 0.3);
+  padding: 16px 22px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(6px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;}
+
+  .DEL{ color: #ffffff !important;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  background: linear-gradient(135deg, rgba(20, 24, 32, 0.95), rgba(27, 94, 32, 0.25));
+  border-left: 5px solid #4caf50;
+  border-right: 1px solid rgba(76, 175, 80, 0.3);
+  padding: 16px 22px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(6px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;}
+
+
+.CHAMPIONS {
+  color: #ffffff !important;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  background: linear-gradient(135deg, rgba(20, 24, 32, 0.95), rgba(27, 94, 32, 0.25));
+  border-left: 5px solid #4caf50;
+  border-right: 1px solid rgba(76, 175, 80, 0.3);
+  padding: 16px 22px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(6px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.UEFA {color: #ffffff !important;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  background: linear-gradient(135deg, rgba(20, 24, 32, 0.95), rgba(27, 94, 32, 0.25));
+  border-left: 5px solid #4caf50;
+  border-right: 1px solid rgba(76, 175, 80, 0.3);
+  padding: 16px 22px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(6px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+.FINALES{color: #ffffff !important;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  background: linear-gradient(135deg, rgba(20, 24, 32, 0.95), rgba(27, 94, 32, 0.25));
+  border-left: 5px solid #4caf50;
+  border-right: 1px solid rgba(76, 175, 80, 0.3);
+  padding: 16px 22px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(6px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ORO{color: #ffffff !important;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  background: linear-gradient(135deg, rgba(20, 24, 32, 0.95), rgba(27, 94, 32, 0.25));
+  border-left: 5px solid #4caf50;
+  border-right: 1px solid rgba(76, 175, 80, 0.3);
+  padding: 16px 22px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(6px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.PREMIO{color: #ffffff !important;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  background: linear-gradient(135deg, rgba(20, 24, 32, 0.95), rgba(27, 94, 32, 0.25));
+  border-left: 5px solid #4caf50;
+  border-right: 1px solid rgba(76, 175, 80, 0.3);
+  padding: 16px 22px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(6px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+
+
+.seccion-historia > p:hover,
+.seccion-historia p.CHAMPIONS:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px rgba(76, 175, 80, 0.2);
+}
+.CLUB{color: #ffffff !important;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  background: linear-gradient(135deg, rgba(20, 24, 32, 0.95), rgba(27, 94, 32, 0.25));
+  border-left: 5px solid #4caf50;
+  border-right: 1px solid rgba(76, 175, 80, 0.3);
+  padding: 16px 22px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(6px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.seccion-historia p strong {
+  color: #81c784;
+}
+
+.seccion-historia p i {
+  color: #a5d6a7;
+  font-style: italic;
+}
+
+/* Divisores de sección */
+.divisor-seccion {
+  border: 0;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(27, 94, 32, 0), rgba(76, 175, 80, 0.6), rgba(27, 94, 32, 0));
+  margin: 50px 0;
+}
+
+/* Listas informativas y de palmarés */
+.lista-origenes,
+.lista-palmares {
+  list-style: none;
+  padding-left: 0;
+}
+
+.lista-origenes li,
+.lista-palmares li {
+  background-color: #141820;
+  color: #e0e6ed;
+  margin-bottom: 10px;
+  padding: 12px 16px;
+  border-radius: 6px;
+  border-left: 3px solid #1b5e20;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+.MARES{ color: #ffffff !important;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  background: linear-gradient(135deg, rgba(20, 24, 32, 0.95), rgba(27, 94, 32, 0.25));
+  border-left: 5px solid #4caf50;
+  border-right: 1px solid rgba(76, 175, 80, 0.3);
+  padding: 16px 22px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(6px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;}
+.lista-origenes li:hover,
+.lista-palmares li:hover {
+  transform: translateX(5px);
+  border-left-color: #4caf50;
+  background-color: #1a202c;
+
+}
+
+
+.lista-origenes li:hover,
+.lista-palmares li:hover {
+  transform: translateX(5px);
+  border-left-color: #4caf50;
+  background-color: #1a202c;  /* Sombra negra para destacarlo del fondo */
+}
+
+
+
+.lista-origenes li strong,
+.lista-palmares li strong {
+  color: #ffffff;
+}
+
+/* ==========================================================================
+   DISEÑO DE TABLAS HISTÓRICAS Y PALMARÉS
+   ========================================================================== */
+
+.tabla-historia {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.95rem;
+  background-color: #ffffff;
+  color: #1e293b;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5);
+}
+
+.tabla-historia thead tr {
+  background: linear-gradient(135deg, #1b5e20, #2e7d32);
+  color: #ffffff;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+.tabla-historia th,
+.tabla-historia td {
+  padding: 12px 15px;
+}
+
+.tabla-historia tbody tr {
+  border-bottom: 1px solid #e2e8f0;
+  text-align: center;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.tabla-historia tbody tr:nth-of-type(even) {
+  background-color: #f8fafc;
+}
+
+.tabla-historia tbody tr:last-of-type {
+  border-bottom: 2px solid #1b5e20;
+}
+
+.tabla-historia tbody tr:hover {
+  background-color: #e2e8f0;
+  color: #0f172a;
+}
+
+
+/* ==========================================================================
+   GRID Y TARJETAS DE BALÓN DE ORO (TEXTOS CLAROS Y CORREGIDOS)
+   ========================================================================== */
+
+   .MERITO{color: #ffffff !important;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  background: linear-gradient(135deg, rgba(20, 24, 32, 0.95), rgba(27, 94, 32, 0.25));
+  border-left: 5px solid #4caf50;
+  border-right: 1px solid rgba(76, 175, 80, 0.3);
+  padding: 16px 22px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(6px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contenedor-tarjetas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 25px;
+  margin-top: 25px;
+}
+
+.tarjeta-balondor {
+  background-color: #141820;
+  border: 1px solid #232d3f;
+  border-top: 4px solid #4caf50;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta-balondor:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 12px 25px rgba(76, 175, 80, 0.25);
+  border-color: #388e3c;
+}
+
+.tarjeta-balondor h4 {
+  font-size: 1.15rem;
+  color: #ffffff;
+  margin: 0 0 15px 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #232d3f;
+  text-align: center;
+}
+
+.tarjeta-balondor figure {
+  margin: 0 0 15px 0;
+  text-align: center;
+}
+
+.tarjeta-balondor figure img {
+  width: 100%;
+  max-height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid #2e7d32;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+  transition: transform 0.3s ease;
+}
+
+.tarjeta-balondor:hover figure img {
+  transform: scale(1.02);
+}
+
+.tarjeta-balondor figcaption {
+  font-size: 0.85rem;
+  color: #a0aec0;
+  margin-top: 8px;
+  font-style: italic;
+}
+
+/* Corrección de color clara para los textos de las tarjetas */
+.tarjeta-balondor p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0;
+  color: #d1d5db !important;
+}
+
+.tarjeta-balondor p strong {
+  color: #81c784 !important;
+}
+
+/* ==========================================================================
+   DISEÑO RESPONSIVO (MÓVILES Y TABLETAS)
+   ========================================================================== */
+
+@media (max-width: 768px) {
+  #inicio h1 {
+    font-size: 1.8rem;
+  }
+
+  #inicio h2 {
+    font-size: 1.2rem;
+  }
+
+  .tabla-historia {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .contenedor-tarjetas {
+    grid-template-columns: 1fr;
+  }
+}
+/* ==========================================================================
+   1. BASE MODO OSCURO (CUERPO DE LA PÁGINA)
+   ========================================================================== */
+:root {
+    --verde-grama: #1c6b30;
+    --verde-brillante: #00e640;
+    --rojo-boton: #b70000;
+    --rojo-brillante: #12a930;
+    --negro-fondo: #0a0a0a;
+    --negro-tarjeta: #141414;
+    --gris-borde: #2a2a2a;
+    --blanco: #ffffff;
+    --texto-secundario: #d1d1d1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--negro-fondo);
+    color: var(--blanco);
+    font-family: Arial, Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 1.5;
+}
+
+.container, .container-seccion {
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ==========================================================================
+   3. TÍTULOS Y BANNER PRINCIPAL (CREATIVIDAD EN MODO OSCURO)
+   ========================================================================== */
+.encabezado-destacado {
+    background: linear-gradient(180deg, #181818 0%, var(--negro-tarjeta) 100%);
+    border: 2px solid var(--verde-grama);
+    border-top: 5px solid var(--rojo-brillante);
+    border-radius: 8px;
+    padding: 30px 20px;
+    text-align: center;
+    margin-top: 25px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.9);
+}
+
+/* Título estilo chapa de estadio */
+.titulo-seccion {
+    background-color: var(--verde-grama);
+    color: var(--blanco);
+    display: inline-block;
+    padding: 6px 22px;
+    font-family: 'Arial Black', Gadget, sans-serif;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    box-shadow: 2px 2px 0px var(--rojo-brillante);
+}
+
+.encabezado-destacado h1 {
+    font-family: 'Arial Black', Gadget, sans-serif;
+    font-size: 1.8rem;
+    color: var(--blanco);
+    margin-bottom: 10px;
+    line-height: 1.3;
+}
+
+.encabezado-destacado p {
+    color: var(--texto-secundario);
+    font-size: 1.05rem;
+}
+
+/* Subtítulos de posiciones (Porteros, Defensas, etc.) */
+.titulo-posicion {
+    font-family: 'Arial Black', Gadget, sans-serif;
+    font-size: 1.3rem;
+    color: var(--blanco);
+    text-transform: uppercase;
+    background-color: var(--verde-grama);
+    padding: 10px 18px;
+    margin: 35px 0 20px 0;
+    border-left: 8px solid var(--rojo-brillante);
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+}
+
+/* ==========================================================================
+   4. TARJETAS DE JUGADORES (CROMOS DEPORTIVOS)
+   ========================================================================== */
+.grid-jugadores {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 18px;
+}
+
+.tarjeta-jugador {
+    background-color: var(--negro-tarjeta);
+    border: 1px solid var(--gris-borde);
+    border-radius: 8px;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.tarjeta-jugador:hover {
+    transform: translateY(-4px);
+    border-color: var(--rojo-brillante);
+}
+
+.foto-jugador {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: #222;
+    border: 2px solid var(--verde-grama);
+}
+
+.info-jugador {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.nombre-dorsal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nombre {
+    color: var(--blanco);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.95rem;
+}
+
+.nombre:hover {
+    color: var(--verde-brillante);
+}
+
+.dorsal {
+    background-color: var(--rojo-boton);
+    color: var(--blanco);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: 'Arial Black', Gadget, sans-serif;
+    font-size: 0.85rem;
+}
+
+.posicion {
+    font-size: 0.8rem;
+    color: #a0a0a0;
+    margin-top: 4px;
+}
+
+/* ==========================================================================
+   5. ACORDEONES Y ARTÍCULOS
+   ========================================================================== */
+.divisor {
+    border: 0;
+    height: 2px;
+    background: linear-gradient(to right, var(--verde-grama), var(--rojo-brillante));
+    margin: 40px 0;
+}
+
+article h2 {
+    font-family: 'Arial Black', Gadget, sans-serif;
+    color: var(--verde-brillante);
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+}
+
+article p {
+    color: var(--texto-secundario);
+    margin-bottom: 15px;
+}
+
+details {
+    background-color: var(--negro-tarjeta);
+    border: 1px solid var(--gris-borde);
+    border-left: 5px solid var(--verde-grama);
+    margin-bottom: 12px;
+    border-radius: 6px;
+    padding: 12px 16px;
+}
+
+details[open] {
+    border-left-color: var(--rojo-brillante);
+}
+
+summary {
+    cursor: pointer;
+    font-weight: bold;
+    color: var(--blanco);
+    font-size: 1rem;
+}
+
+details p, details ul {
+    margin-top: 10px;
+    color: var(--texto-secundario);
+}
+
+figure img {
+    border-radius: 6px;
+    border: 1px solid var(--gris-borde);
+    margin-top: 10px;
+}
+
+/* ==========================================================================
+   6. SECCIÓN LA GRAN FINAL
+   ========================================================================== */
+.final-resumen {
+    background-color: var(--negro-tarjeta);
+    border: 2px solid var(--rojo-brillante);
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+}
+
+.final-resumen h2 {
+    font-family: 'Arial Black', Gadget, sans-serif;
+    color: var(--rojo-brillante);
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.descripcion-final {
+    color: var(--blanco);
+    font-size: 1.05rem;
+    margin-bottom: 20px;
+}
+
+.multimedia-final {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+figcaption {
+    margin-top: 8px;
+    color: var(--verde-brillante);
+    font-weight: bold;
+}
+
+
+
+
+/*Diseños y estilos pagina de eventos proximos*/
+
+/* ==========================================================
+   SECCIÓN DE EVENTOS - SOCCER WORLD
+   ========================================================== */
+
+/* Contenedor general */
+/* RESET BASE */
+
+.titulo-pagina { color: #ffffff; font-size: 1.4rem; font-weight: 800; }
+.titulo-pagina span { color: #12b739; }
+
+.navbar { display: flex; gap: 10px; }
+.navbar a {
+  background-color: #0b7c25;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.navbar a:hover, .navbar a.active {
+  background-color: #145a23;
+  box-shadow: 0 0 10px rgba(30, 126, 52, 0.5);
+}
+
+/* CONTENEDOR PRINCIPAL */
+.eventos-container {
+  max-width: 1100px;
+  margin: 30px auto;
+  padding: 24px;
+  background: #121519;
+  border-radius: 16px;
+  border: 1px solid #21262d;
+}
+
+/* 1. PULSE BADGE */
+.live-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(46, 164, 79, 0.15);
+  border: 1px solid #1e7e34;
+  color: #3fb950;
+  font-size: 0.75rem;
+  font-weight: 800;
+  padding: 4px 12px;
+  border-radius: 20px;
+  margin-bottom: 12px;
+}
+
+.pulse-dot {
+  width: 8px;
+  height: 8px;
+  background-color: #3fb950;
+  border-radius: 50%;
+  animation: pulse-animation 1.5s infinite;
+}
+
+@keyframes pulse-animation {
+  0% { box-shadow: 0 0 0 0 rgba(63, 185, 80, 0.7); }
+  70% { box-shadow: 0 0 0 8px rgba(63, 185, 80, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(63, 185, 80, 0); }
+}
+
+.eventos-header h2 { font-size: 1.7rem; color: #ffffff; margin-bottom: 6px; }
+.eventos-header p { color: #8b949e; font-size: 0.95rem; margin-bottom: 20px; }
+
+/* 2. FILTROS INTERACTIVOS SIN JAVASCRIPT */
+.filtro-wrapper input[type="radio"] { display: none; }
+
+.botones-filtro {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid #21262d;
+  padding-bottom: 16px;
+}
+
+.btn-filtro {
+  background: #161b22;
+  border: 1px solid #30363d;
+  color: #8b949e;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-filtro:hover { color: #ffffff; border-color: #1e7e34; }
+
+/* Lógica de filtrado CSS */
+#cat-todos:checked ~ .botones-filtro label[for="cat-todos"],
+#cat-clubes:checked ~ .botones-filtro label[for="cat-clubes"],
+#cat-selecciones:checked ~ .botones-filtro label[for="cat-selecciones"] {
+  background: #1e7e34;
+  color: #ffffff;
+  border-color: #3fb950;
+  box-shadow: 0 0 12px rgba(30, 126, 52, 0.4);
+}
+
+#cat-clubes:checked ~ .grid-eventos .cat-selecciones { display: none; }
+#cat-selecciones:checked ~ .grid-eventos .cat-clubes { display: none; }
+
+/* 3. TICKETS 3D CON LUZ HOLOGRÁFICA */
+.grid-eventos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(48%, 1fr));
+  gap: 20px;
+}
+
+.ticket-card {
+  background: linear-gradient(145deg, #161b22, #0d1117);
+  border: 1px solid #30363d;
+  border-radius: 12px;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.ticket-glow {
+  position: absolute;
+  top: 0; left: -100%;
+  width: 100%; height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(63, 185, 80, 0.15), transparent);
+  transition: 0.5s;
+}
+
+.ticket-card:hover .ticket-glow { left: 100%; }
+
+.ticket-card:hover {
+  transform: translateY(-5px);
+  border-color: #3fb950;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.notch {
+  width: 16px; height: 16px;
+  background-color: #121519;
+  border-radius: 50%;
+  position: absolute;
+  right: -8px;
+}
+.notch.top { top: 30%; }
+.notch.bottom { bottom: 30%; }
+
+.badge-torneo {
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: 8px;
+}
+.badge-torneo.uefa { background: rgba(56, 139, 253, 0.2); color: #58a6ff; }
+.badge-torneo.conmebol { background: rgba(238, 168, 38, 0.2); color: #d29922; }
+.badge-torneo.fifa { background: rgba(46, 164, 79, 0.2); color: #3fb950; }
+.badge-torneo.selecciones { background: rgba(163, 113, 247, 0.2); color: #bc8cff; }
+
+.ticket-header h3 { color: #ffffff; font-size: 1.2rem; margin-bottom: 4px; }
+.evento-meta { color: #8b949e; font-size: 0.85rem; }
+
+.countdown-box {
+  border: 1px dashed #30363d;
+  border-radius: 8px;
+  background: #090c10;
+  padding: 10px;
+  margin: 14px 0;
+}
+
+.countdown-box legend {
+  color: #1e7e34;
+  font-size: 0.7rem;
+  font-weight: bold;
+  padding: 0 6px;
+  letter-spacing: 1px;
+}
+
+.timer { display: flex; align-items: center; justify-content: space-around; }
+
+.timer mark {
+  background: #161b22;
+  color: #ffffff;
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #30363d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 50px;
+}
+
+.timer mark strong { font-size: 1.2rem; color: #3fb950; font-family: monospace; }
+.timer mark.fire strong { color: #f85149; }
+.timer mark span { font-size: 0.6rem; color: #8b949e; }
+.timer .colon { font-weight: bold; color: #484f58; }
+
+.evento-detalles { background: #0d1117; padding: 8px 12px; border-radius: 6px; }
+.evento-detalles summary { cursor: pointer; color: #58a6ff; font-size: 0.85rem; font-weight: 600; }
+.evento-detalles ul { margin: 8px 0 0 16px; color: #c9d1d9; font-size: 0.82rem; }
+
+/* 4. TARJETAS FLIP 3D */
+.agenda-3d-section { margin-top: 40px; }
+.agenda-3d-section h3 { font-size: 1.1rem; color: #ffffff; margin-bottom: 16px; }
+
+.flip-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+}
+
+.flip-card {
+  background-color: transparent;
+  height: 120px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%; height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+}
+
+.flip-card:hover .flip-card-inner { transform: rotateY(180deg); }
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%; height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #30363d;
+}
+
+.flip-card-front {
+  background: #161b22;
+  color: #ffffff;
+  border-left: 4px solid #1e7e34;
+}
+
+.flip-hint { font-size: 0.75rem; color: #8b949e; margin-top: 6px; }
+
+.flip-card-back {
+  background: #1e7e34;
+  color: #ffffff;
+  transform: rotateY(180deg);
+}
+
+.flip-card-back h5 { font-size: 1rem; margin-bottom: 4px; }
+.flip-card-back p { font-size: 0.8rem; line-height: 1.3; }
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  color: #8b949e;
+  font-size: 0.85rem;
+  border-top: 1px solid #21262d;
+  margin-top: 40px;
+}
+
+/*Estilos seccion destacados*/
+

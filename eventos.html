@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soccer World - Eventos Próximos</title>
+    <link rel="icon" href="Imagenes/soccer_wordl.jfif-removebg-preview.png"> 
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="brand-logo">
+               <img src="soccer_wordl.jfif-removebg-preview.png" alt="imglogo" width="45">
+               <h1 class="titulo-pagina">SOCCER <span>WORLD</span></h1>
+            </a>
+            <nav class="navbar">
+                <a href="index.html">Inicio</a>
+                <a href="Estadios.html">Estadios</a>
+                <a href="destacados.html">Destacados</a>
+                <a href="eventos.html" class="active">Eventos Próximos</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section id="eventos" class="eventos-container">
+            
+            <header class="eventos-header">
+                <div class="live-pill">
+                    <span class="pulse-dot"></span> EN VIVO | COBERTERA GLOBAL
+                </div>
+                <h2>⏱️ Próximos Grandes Eventos del Fútbol Mundial</h2>
+                <p>Centro de mando con marcadores digitales y filtros dinámicos.</p>
+            </header>
+
+            <!-- SISTEMA DE FILTROS INTERACTIVOS SIN JAVASCRIPT -->
+            <div class="filtro-wrapper">
+                <input type="radio" id="cat-todos" name="categoria" checked>
+                <input type="radio" id="cat-clubes" name="categoria">
+                <input type="radio" id="cat-selecciones" name="categoria">
+
+                <div class="botones-filtro">
+                    <label for="cat-todos" class="btn-filtro">🌐 Todos los Eventos</label>
+                    <label for="cat-clubes" class="btn-filtro">🏆 Clubes (UEFA/CONMEBOL)</label>
+                    <label for="cat-selecciones" class="btn-filtro">🌎 Selecciones Nacionales</label>
+                </div>
+
+                <!-- CONTENEDOR DE TARJETAS TICKET 3D -->
+                <div class="grid-eventos">
+
+                    <!-- EVENTO 1: CHAMPIONS LEAGUE -->
+                    <article class="ticket-card cat-clubes">
+                        <div class="ticket-glow"></div>
+                        <div class="notch top"></div>
+                        <div class="notch bottom"></div>
+                        
+                        <header class="ticket-header">
+                            <span class="badge-torneo uefa">UEFA Champions League</span>
+                            <h3>Final 2027</h3>
+                            <p class="evento-meta">
+                                📅 <strong>Fecha:</strong> <time datetime="2027-06-05">05 de Junio de 2027</time>
+                            </p>
+                        </header>
+
+                        <fieldset class="countdown-box">
+                            <legend>MARCADOR DIGITAL</legend>
+                            <div class="timer">
+                                <mark><strong>287</strong> <span>Días</span></mark>
+                                <span class="colon">:</span>
+                                <mark><strong>12</strong> <span>Horas</span></mark>
+                                <span class="colon">:</span>
+                                <mark><strong>45</strong> <span>Min</span></mark>
+                            </div>
+                        </fieldset>
+
+                        <details class="evento-detalles">
+                            <summary>🔍 Ver detalles y sedes candidatas</summary>
+                            <ul>
+                                <li><strong>Sedes:</strong> Estadio Metropolitano / Allianz Arena</li>
+                                <li><strong>Fase:</strong> Gran Final Torneo 2026-2027</li>
+                                <li><strong>Audiencia Estimada:</strong> 450M de espectadores.</li>
+                            </ul>
+                        </details>
+                    </article>
+
+                    <!-- EVENTO 2: LIBERTADORES -->
+                    <article class="ticket-card cat-clubes">
+                        <div class="ticket-glow"></div>
+                        <div class="notch top"></div>
+                        <div class="notch bottom"></div>
+
+                        <header class="ticket-header">
+                            <span class="badge-torneo conmebol">CONMEBOL Libertadores</span>
+                            <h3>Gran Final 2026</h3>
+                            <p class="evento-meta">
+                                🔥 <strong>Fase Final:</strong> <time datetime="2026-11-28">28 de Noviembre de 2026</time>
+                            </p>
+                        </header>
+
+                        <fieldset class="countdown-box">
+                            <legend>MARCADOR DIGITAL</legend>
+                            <div class="timer">
+                                <mark class="fire"><strong>98</strong> <span>Días</span></mark>
+                                <span class="colon">:</span>
+                                <mark class="fire"><strong>18</strong> <span>Horas</span></mark>
+                                <span class="colon">:</span>
+                                <mark class="fire"><strong>10</strong> <span>Min</span></mark>
+                            </div>
+                        </fieldset>
+
+                        <details class="evento-detalles">
+                            <summary>🔍 Ver detalles del evento y premio</summary>
+                            <ul>
+                                <li><strong>Sede:</strong> Sede Única Neutra</li>
+                                <li><strong>Premio:</strong> Clasificación a la Copa Intercontinental FIFA.</li>
+                            </ul>
+                        </details>
+                    </article>
+
+                    <!-- EVENTO 3: INTERCONTINENTAL -->
+                    <article class="ticket-card cat-clubes">
+                        <div class="ticket-glow"></div>
+                        <div class="notch top"></div>
+                        <div class="notch bottom"></div>
+
+                        <header class="ticket-header">
+                            <span class="badge-torneo fifa">FIFA Intercontinental</span>
+                            <h3>Copa FIFA 2026</h3>
+                            <p class="evento-meta">
+                                🌍 <strong>Cierre de Año:</strong> <time datetime="2026-12-18">18 de Diciembre de 2026</time>
+                            </p>
+                        </header>
+
+                        <fieldset class="countdown-box">
+                            <legend>MARCADOR DIGITAL</legend>
+                            <div class="timer">
+                                <mark><strong>118</strong> <span>Días</span></mark>
+                                <span class="colon">:</span>
+                                <mark><strong>06</strong> <span>Horas</span></mark>
+                                <span class="colon">:</span>
+                                <mark><strong>30</strong> <span>Min</span></mark>
+                            </div>
+                        </fieldset>
+
+                        <details class="evento-detalles">
+                            <summary>🔍 Ver detalles del torneo</summary>
+                            <ul>
+                                <li><strong>Participantes:</strong> Campeones de las 6 confederaciones.</li>
+                                <li><strong>Formato:</strong> Eliminación directa.</li>
+                            </ul>
+                        </details>
+                    </article>
+
+                    <!-- EVENTO 4: TORNEOS CONTINENTALES -->
+                    <article class="ticket-card cat-selecciones">
+                        <div class="ticket-glow"></div>
+                        <div class="notch top"></div>
+                        <div class="notch bottom"></div>
+
+                        <header class="ticket-header">
+                            <span class="badge-torneo selecciones">Torneos Continentales</span>
+                            <h3>Copa América & Eurocopa 2028</h3>
+                            <p class="evento-meta">
+                                🗓️ <strong>Período:</strong> <time datetime="2028-06-15">Junio / Julio 2028</time>
+                            </p>
+                        </header>
+
+                        <fieldset class="countdown-box">
+                            <legend>MARCADOR DIGITAL</legend>
+                            <div class="timer">
+                                <mark><strong>660</strong> <span>Días</span></mark>
+                                <span class="colon">:</span>
+                                <mark><strong>10</strong> <span>Horas</span></mark>
+                                <span class="colon">:</span>
+                                <mark><strong>00</strong> <span>Min</span></mark>
+                            </div>
+                        </fieldset>
+
+                        <details class="evento-detalles">
+                            <summary>🔍 Ver detalles de los torneos</summary>
+                            <ul>
+                                <li><strong>Eurocopa 2028:</strong> Reino Unido e Irlanda.</li>
+                                <li><strong>Copa América 2028:</strong> Sede por definir CONMEBOL.</li>
+                            </ul>
+                        </details>
+                    </article>
+
+                </div>
+            </div>
+
+            <!-- TARJETAS FLIP CARDS 3D -->
+            <aside class="agenda-3d-section">
+                <h3>📅 Agenda Rápida (Pasa el cursor sobre la tarjeta)</h3>
+                <div class="flip-grid">
+                    
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <h4>⚽ Eliminatorias Mundialistas</h4>
+                                <span class="flip-hint">🔄 Hover para girar</span>
+                            </div>
+                            <div class="flip-card-back">
+                                <h5>Fechas FIFA 2026-2027</h5>
+                                <p>Sigue la clasificación directa en CONMEBOL, UEFA y CONCACAF.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <h4>🏆 UEFA Nations League</h4>
+                                <span class="flip-hint">🔄 Hover para girar</span>
+                            </div>
+                            <div class="flip-card-back">
+                                <h5>Finals - Junio 2027</h5>
+                                <p>Los 4 mejores equipos disputarán el título europeo.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <h4>🥇 Copa Oro Concacaf</h4>
+                                <span class="flip-hint">🔄 Hover para girar</span>
+                            </div>
+                            <div class="flip-card-back">
+                                <h5>Junio - Julio 2027</h5>
+                                <p>El torneo de selecciones de Norte y Centroamérica.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </aside>
+
+        </section>
+    </main>
+
+    < <footer class="pie-pagina">
+        <div class="contenido-footer">
+        <!-- Columna 1: Marca y descripción -->
+           <div class="columna-footer">
+              <h3 class="logo-footer">SOCCER <span>WORLD</span></h3>
+               <p>Tu portal de información sobre los mejores estadios, torneos y estadísticas del fútbol mundial.</p>
+            </div>
+
+        <!-- Columna 2: Enlaces rápidos -->
+        <div class="columna-footer">
+            <h4>Navegación</h4>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="Estadios.html">Estadios</a></li>
+                <li><a href="#destacados">Destacados</a></li>
+                <li><a href="#eventos">Eventos Próximos</a></li>
+            </ul>
+        </div>
+
+        <!-- Columna 3: Información de contacto / Créditos -->
+             <div class="columna-footer">
+             <h4>Proyecto</h4>
+             <p>Diseño y Desarrollo Web</p>
+             <p class="autor">Creado por <strong>Tu Nombre</strong></p>
+            </div>
+       </div>
+
+    <!-- Barra inferior de copyright -->
+       <div class="copyright-footer">
+         <p>&copy; 2026 Soccer World. Todos los derechos reservados.</p>
+       </div>
+    </footer>
+
+
+
+</body>
+</html>
